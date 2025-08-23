@@ -24,7 +24,7 @@ repos:
       - id: prettier
 
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.33.2
+    rev: 0.33.3
     hooks:
       - id: check-github-workflows
       - id: check-renovate
@@ -40,7 +40,7 @@ repos:
       - id: taplo-format
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.12.5
+    rev: v0.12.10
     hooks:
       - id: ruff-format
       - id: ruff-check

@@ -3,14 +3,14 @@
 default: check
 
 install:
-	pre-commit install
 	uv sync
 update:
 	uv sync --upgrade
+	prek auto-update
 
 check: pc
 pc:
-	pre-commit run -a
+	prek run -a
 
 find: find-empty find-nonmask find-test find-old
 find-empty:

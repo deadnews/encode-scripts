@@ -24,10 +24,12 @@ pydocstyle.convention                    = "google"
 select = ["ALL"]
 ignore = [
   "COM812",  # Trailing comma missing
+  "CPY001",  # Missing copyright notice at top of file
   "FBT001",  # Boolean positional arg in function definition
   "FBT002",  # Boolean default value in function definition
   "ISC001",  # Checks for implicitly concatenated strings on a single line
   "PLR0913", # Too many arguments to function call
+  "PLR0917", # Too many positional arguments
   #
   "BLE001", # Do not catch blind exception: `Exception`
   "D100",   # Missing docstring in public module
@@ -41,6 +43,3 @@ ignore = [
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["F401"]
 "tests/*"     = ["ANN", "D", "E501", "PLC1901", "PLR2004", "S"]
-
-[tool.pyright]
-typeCheckingMode = "off"

@@ -1,12 +1,14 @@
-.PHONY: all clean default install lock update check pc test docs run
+.PHONY: check find install pc up update
 
 default: check
 
 install:
 	uv sync
-update:
+update: up up-ci
+up:
 	uv sync --upgrade
-	prek auto-update
+up-ci:
+	prek update
 
 check: pc
 pc:

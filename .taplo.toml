@@ -4,6 +4,12 @@ allowed_blank_lines = 1
 column_width        = 80
 
 [[rule]]
+include = ["**/prek.toml"]
+
+[rule.formatting]
+array_auto_collapse = false
+
+[[rule]]
 include = ["**/pyproject.toml"]
 keys    = ["dependencies"]
 

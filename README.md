@@ -2,7 +2,7 @@
 
 > [Vapoursynth](https://github.com/vapoursynth/vapoursynth) scripts
 
-[![CI: pre-commit](https://results.pre-commit.ci/badge/github/deadnews/encode-scripts/main.svg)](https://results.pre-commit.ci/latest/github/deadnews/encode-scripts/main)
+[![CI: Main](https://img.shields.io/github/actions/workflow/status/deadnews/encode-scripts/main.yml?branch=main&logo=github&logoColor=white&label=main)](https://github.com/deadnews/encode-scripts)
 
 ## Deps
 
